@@ -6,23 +6,16 @@ const {CleanWebpackPlugin} = require("clean-webpack-plugin");
 module.exports = {
     entry: "./src/index.jsx",
     output: {
-        filename: "bundle.js",
-        path: path.resolve(__dirname + "/build")
+        filename: "bundle.[contenthash].js",
+        path: path.resolve(__dirname, "../build")
     },
-    devServer: {
-        contentBase: path.resolve(__dirname + "/build"),
-        index: "index.html",
-        port: 9000
-    },
-    mode: "none",
+    mode: "production",
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
                 exclude: "/node_modules",
-                use: [
-                    'babel-loader'
-                ],
+                use: ["babel-loader"]
             },
             {
                 test: /\.html$/,
@@ -35,10 +28,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader'
-                ]
+                use: [MiniCssExtractPlugin.loader, "css-loader"]
             },
             {
                 test: /\.scss$/,
@@ -48,11 +38,11 @@ module.exports = {
     },
     plugins: [
         new HtmlWebPackPlugin({
-            template: './public/index.html',
-            filename: 'index.html'
+            template: "./public/index.html",
+            filename: "index.html"
         }),
         new MiniCssExtractPlugin({
-            filename: 'style-test.css'
+            filename: "style.css"
         }),
         new CleanWebpackPlugin()
     ]
