@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/webpack/webpack.iml" filepath="$PROJECT_DIR$/webpack/webpack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webpack-react/webpack-react.iml" filepath="$PROJECT_DIR$/webpack-react/webpack-react.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webpack4-react/webpack4-react.iml" filepath="$PROJECT_DIR$/webpack4-react/webpack4-react.iml" />
     </modules>
   </component>
 </project>
