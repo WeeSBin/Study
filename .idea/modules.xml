@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/node-react-webpack/node-react-webpack.iml" filepath="$PROJECT_DIR$/node-react-webpack/node-react-webpack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simplreact/simplreact.iml" filepath="$PROJECT_DIR$/simplreact/simplreact.iml" />
       <module fileurl="file://$PROJECT_DIR$/webpack/webpack.iml" filepath="$PROJECT_DIR$/webpack/webpack.iml" />
       <module fileurl="file://$PROJECT_DIR$/webpack-react/webpack-react.iml" filepath="$PROJECT_DIR$/webpack-react/webpack-react.iml" />
-      <module fileurl="file://$PROJECT_DIR$/webpack4-react/webpack4-react.iml" filepath="$PROJECT_DIR$/webpack4-react/webpack4-react.iml" />
     </modules>
   </component>
 </project>
