@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 
 class MyName extends Component {
+    // static defaultProps = {
+    //     name: '디폴트값'
+    // }
     render() {
         return (
             <div>
@@ -8,6 +11,11 @@ class MyName extends Component {
             </div>
         )
     }
+
 }
+
+MyName.defaultProps = {
+    name: '디폴트 값'
+};
 
 export default MyName;
