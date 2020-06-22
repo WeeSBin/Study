@@ -14,7 +14,7 @@ class App extends Component {
                 phone: '010-1234-1234'
             },
             {
-                id: 0,
+                id: 1,
                 name: '홍길동',
                 phone: '010-5678-5678'
             }
@@ -30,11 +30,29 @@ class App extends Component {
         })
     }
 
+    handleRemove = (id) => {
+        const {information} = this.state
+        this.setState({
+            information: information.filter(info => info.id != id)
+        })
+    }
+
+    handleUpdate = (id, data) => {
+        const {information} = this.state
+        this.setState({
+            information: information.map(
+                info => id === info.id
+                ? {...info, ...data} // 새 객체를 만들고 기존의 값 위에 전달받은 data 를 덮자
+                : info // 기존의 값은 그대로 유지
+            )
+        })
+    }
+
     render() {
         return (
             <div>
               <PhoneFrom onCreate={this.handleCreate} />
-              <PhoneInfoList data={this.state.information}/>
+              <PhoneInfoList data={this.state.information} onRemove={this.handleRemove} onUpdate={this.handleUpdate} />
             </div>
         )
     }
