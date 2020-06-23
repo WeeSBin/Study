@@ -26,7 +26,6 @@ class PhoneForm extends Component {
             <form onSubmit={this.handleSubmit}>
                 <input placeholder={'이름'} value={this.state.name} onChange={this.handleChange} name={'name'} />
                 <input placeholder={'전화번호'} value={this.state.phone} onChange={this.handleChange} name={'phone'} />
-                <div>{this.state.name} / {this.state.phone}</div>
                 <button type={'submit'}>등록</button>
             </form>
         )
