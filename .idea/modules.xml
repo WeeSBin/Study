@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/node-react-webpack/node-react-webpack.iml" filepath="$PROJECT_DIR$/node-react-webpack/node-react-webpack.iml" />
       <module fileurl="file://$PROJECT_DIR$/phone-book/phone-book.iml" filepath="$PROJECT_DIR$/phone-book/phone-book.iml" />
       <module fileurl="file://$PROJECT_DIR$/simplreact/simplreact.iml" filepath="$PROJECT_DIR$/simplreact/simplreact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/todo-list/todo-list.iml" filepath="$PROJECT_DIR$/todo-list/todo-list.iml" />
       <module fileurl="file://$PROJECT_DIR$/webpack/webpack.iml" filepath="$PROJECT_DIR$/webpack/webpack.iml" />
       <module fileurl="file://$PROJECT_DIR$/webpack-react/webpack-react.iml" filepath="$PROJECT_DIR$/webpack-react/webpack-react.iml" />
     </modules>
