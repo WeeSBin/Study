@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import './TodoItem.css';
 
 class TodoItem extends Component {
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return this.props.todos !== nextProps.todos;
+    }
     render() {
         const {text, checked, id, onToggle, onRemove} = this.props;
         return (
