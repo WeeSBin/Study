@@ -4,8 +4,6 @@
 #### [step.02] webpack-react
 #### [step.03] node-react-webpack
 
----
-
 ## following-[velopert](https://velopert.com/)
 #### simplereact
 #### todo-list
